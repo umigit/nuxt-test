@@ -1,4 +1,6 @@
 <template>
+  <header class="header">
+  </header>
   <section class="container">
     <div>
       <app-logo/>
@@ -34,7 +36,7 @@ export default {
 
 <style>
 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +62,11 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.header {
+  height: 80px;
+  width: 100vw;
 }
 </style>
 
