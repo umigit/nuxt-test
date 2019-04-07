@@ -1,8 +1,19 @@
 <template>
   <div>
+    <Header/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import Header from "~/components/Header";
+
+export default {
+  components: {
+    Header,
+  }
+}
+</script>
 
 <style>
 html {
@@ -14,6 +25,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 *, *:before, *:after {

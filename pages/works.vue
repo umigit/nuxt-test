@@ -1,13 +1,20 @@
 <template>
   <section class="container">
     <div class="mask">
-      <img class="title" src='~assets/image/umihiko_800.png'/>
+
     </div>
   </section>
 </template>
 
 <script>
+import axios from 'axios'
 
+export default {
+  async asyncData({}) {
+    let data = await axios.get('https://umi-portfolio-api.herokuapp.com/api/works/?format=json')
+    console.log(data)
+  },
+}
 </script>
 
 <style>
@@ -46,4 +53,3 @@
   padding-top: 15px;
 }
 </style>
-
